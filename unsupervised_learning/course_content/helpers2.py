@@ -25,6 +25,7 @@ def plot_data(data, labels):
     fig = plt.figure();
     ax = Axes3D(fig)
     ax.scatter(data[:, 0], data[:, 1], data[:, 2], c=labels, cmap='tab10');
+    fig.add_axes(ax)
 
 data = simulate_data(200, 5, 4)
 
